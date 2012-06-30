@@ -8,13 +8,16 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 public class WordCountMapper extends
-		Mapper<LongWritable, Text, Text, IntWritable> {
-
-	@Override
-	public void map(LongWritable key, Text value, Context context)
-			throws IOException, InterruptedException {
-
-		// Utiliser context.write(text, int) pour ecrire la sortie du mapper.
-	}
-
+Mapper<LongWritable, Text, Text, IntWritable> {
+    
+    @Override
+    public void map(LongWritable key, Text value, Context context)
+            throws IOException, InterruptedException {
+        
+        System.out.println(new String());
+        
+        
+        // Utiliser context.write(text, int) pour ecrire la sortie du mapper.
+    }
+    
 }
